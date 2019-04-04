@@ -5,7 +5,7 @@
       <div v-for="item in items.titles" :key="item.id">
         <div class="tag-item-body hvr-forward">
           <div class="tag-time">{{ item.date }}</div>
-          <div class="tag-title"><a :href="'/post/'+item.id" target="_blank">{{ item.title }}</a></div>
+          <div class="tag-title"><a :href="'#/post/'+item.id" target="_blank">{{ item.title }}</a></div>
         </div>
       </div>
 
@@ -31,7 +31,7 @@
     },
     methods: {
       getData() {
-        axios.get("/static/mock/tags.json").then(res => {
+        axios.get("https://robin.ml/vue-blog/static/mock/tags.json").then(res => {
           this.datas = res.data.data;
           console.log(this.datas);
         })

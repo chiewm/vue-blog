@@ -7,7 +7,7 @@
     <div class="hot-body">
       <div class="hot-list">
         <ul v-for="item in datas" :key="item.id">
-          <li><a :href="'/post/' + item.id " target="_blank">{{ item.title }}</a></li>
+          <li><a :href="'#/post/' + item.id " target="_blank">{{ item.title }}</a></li>
         </ul>
       </div>
     </div>
@@ -32,7 +32,7 @@
     },
     methods: {
       getIndexData() {
-        axios.get("/static/mock/hot.json").then(res => {
+        axios.get("https://robin.ml/vue-blog/static/mock/hot.json").then(res => {
           this.datas = res.data.data;
         })
       }

@@ -45,7 +45,7 @@
     },
     methods: {
       getData(id) {
-        axios.get("/static/mock/posts.json").then(res => {
+        axios.get("https://robin.ml/vue-blog/static/mock/posts.json").then(res => {
           var datas = res.data.data;
           datas.forEach(element => {
             if (element.id == id) {

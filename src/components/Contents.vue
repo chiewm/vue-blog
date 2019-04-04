@@ -2,7 +2,7 @@
   <div>
     <div v-for="item in datas" :key="item.id">
        <div class="content">
-      <h3 class="title"><a :href="'/post/' + item.id " target="_blank">{{ item.title }}</a></h3>
+      <h3 class="title"><a :href="'#/post/' + item.id " target="_blank">{{ item.title }}</a></h3>
       <p class="summary">{{ item.summary }}</p>
       <div class="author">{{ item.author }}<span>{{ item.time }}</span><span>{{ item.tag }}</span></div>
       <div class="tool">
@@ -39,7 +39,7 @@ import axios from 'axios'
     },
     methods: {
       getIndexData() {
-        axios.get("/static/mock/index.json").then(res => {
+        axios.get("https://robin.ml/vue-blog/static/mock/index.json").then(res => {
           this.datas = res.data.data;
         })
       }

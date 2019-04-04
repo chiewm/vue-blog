@@ -2,7 +2,7 @@
   <div class="wechat">
     <div class="wechat-body">
         <div class="wechat-code">
-        <img src="/static/images/wechat.png" alt="">
+        <img src="https://robin.ml/vue-blog/static/images/wechat.png" alt="">
         </div>
         <div class="wechat-text">
             扫描微信二维码<br>

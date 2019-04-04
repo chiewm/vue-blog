@@ -28,7 +28,7 @@
     },
     methods: {
       getData() {
-        axios.get("/static/mock/tag.json").then(res => {
+        axios.get("https://robin.ml/vue-blog/static/mock/tag.json").then(res => {
           this.datas = res.data.data;
           console.log(this.datas);
         })

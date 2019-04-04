@@ -5,7 +5,7 @@
       <div v-for="item in items.titles" :key="item.id">
         <div class="achive-item-body hvr-forward">
           <div class="achive-time">{{ item.date }}</div>
-          <div class="achive-title"><a :href="'/post/'+item.id" target="_blank">{{ item.title }}</a></div>
+          <div class="achive-title"><a :href="'#/post/'+item.id" target="_blank">{{ item.title }}</a></div>
         </div>
       </div>
 
@@ -31,7 +31,7 @@
     },
     methods: {
       getData() {
-        axios.get("/static/mock/achieves.json").then(res => {
+        axios.get("https://robin.ml/vue-blog/static/mock/achieves.json").then(res => {
           this.datas = res.data.data;
           console.log(this.datas);
         })
