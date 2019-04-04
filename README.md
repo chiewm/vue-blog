@@ -1,21 +1,14 @@
 # CHIEWM
 
-> A Vue.js project
+> 一个用 Vue.js 搭建的博客
 
-## Build Setup
+查看[在线Demo](https://robin.ml/vue-blog/)
 
-``` bash
-# install dependencies
-npm install
 
-# serve with hot reload at localhost:8080
-npm run dev
+- [x] 基本页面
+- [ ] 文章编辑
+- [ ] 评论
+- [ ] 登陆注册
 
-# build for production with minification
-npm run build
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+![预览图](images/demo.png)
