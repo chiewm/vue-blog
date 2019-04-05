@@ -5,9 +5,10 @@
         <li class="item"><a href="">最新</a></li>
         <li class="item"><a href="">热门</a></li>
         <li class="item"><a href="">评论最多</a></li>
+        <li class="item"><div class="refresh"><a href="">刷新</a></div></li>
       </ul>
     </div>
-    <div class="refresh"><a href="">刷新</a></div>
+    
   </div>
 </template>
 
@@ -26,9 +27,7 @@
 <style scoped>
   .content-bar {
     height: 40px;
-    width: 640px;
     background: #fff;
-    float: left;
     border-bottom: 1px solid #9797971a;
 
   }
@@ -39,16 +38,17 @@
 
   .content-nav {
     width: 200px;
-    float: left;
     line-height: 40px;
     height: 40px;
+    display: flex;
+    justify-content:flex-start;
   }
 
   .content-nav .item {
     display: block;
-    float: left;
     padding: 0 8px;
   }
+
 
 
   .content-nav .item a {
@@ -57,12 +57,12 @@
   }
 
   .refresh a {
-    float: right;
     line-height: 40px;
     height: 40px;
-    margin-right: 20px;
     font-size: 12px;
     color: #71777c;
+    margin-right:auto;
+
   }
 
 </style>

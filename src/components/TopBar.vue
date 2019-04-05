@@ -1,10 +1,9 @@
 <template>
   <div class="topbar">
-    <div class="container clearfix">
+    <div class="container">
       <div class="topbar-logo">CHIEW</div>
       <div class="topbar-nav">
         <ul>
-
           <li class="nav-item">
           <router-link to="/">首页</router-link>
           </li>
@@ -14,10 +13,6 @@
           <li class="nav-item">
                <router-link to="/tags">标签</router-link>
           </li>
-        <!--
-          <li class="nav-item">
-            <a href="">资源</a>
-          </li> -->
           <li class="nav-item">
                 <a href="https://robin.ml/" target="_blank">关于</a>
           </li>
@@ -60,26 +55,36 @@
     font-weight: bold;
     color: #4fc08d;
     display: block;
-    float: left;
     margin-top: 10px;
   }
 
 
   .topbar-nav {
     width: 600px;
-    float: left;
     height: 40px;
     color: #71777c;
     line-height: 40px;
     margin-left: 50px;
     margin-top: 10px;
+
   }
 
   .topbar-nav .nav-item {
-    float: left;
-    margin: 0 20px;
+
     font-size: 16px;
+
   }
+  .topbar-nav ul {
+    display: flex;
+    justify-content: center;
+
+  }
+
+   .topbar-nav ul li{
+    flex: 1;
+  }
+
+
 
   .topbar-nav .nav-item a {
     color: #71777c;
@@ -116,6 +121,10 @@
   .topbar-write .btn:hover {
     background: #4ab485;
     border-radius: 20px;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 1024px) {
+  .topbar-write{display: none}
   }
 
 </style>

@@ -33,23 +33,17 @@ a {
 }
 
 .container {
-  margin: 0 auto;
-  width: 960px;
+  /* margin: 0 auto;
+  width: 960px; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 
 }
 
 
 ul {
   list-style-type: none;
-}
-
-clearfix::after, clearfix::before{
-  content: "";
-  display: table;
-}
-
-clearfix::after, clearfix::before{
-  clear: both;
 }
 
 #app {

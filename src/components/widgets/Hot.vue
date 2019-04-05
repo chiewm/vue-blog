@@ -43,8 +43,7 @@
 
 <style scoped>
   .hot {
-    width: 300px;
-    float: left;
+
     margin-top: 20px;
     background: #fff;
     box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);

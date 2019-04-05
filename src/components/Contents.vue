@@ -52,12 +52,10 @@ import axios from 'axios'
   @import url("https://at.alicdn.com/t/font_1124736_9gtkw41uh4w.css");
 
   .content {
-    width: 600px;
-    float: left;
     height: 110px;
     background: #fff;
     border-bottom: 1px solid #9797971a;
-    padding: 15px 20px;
+    padding: 20px;
   }
 
   .content:hover {

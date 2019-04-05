@@ -45,8 +45,7 @@
   @import url("https://cdn.bootcss.com/hover.css/2.3.1/css/hover-min.css");
 
   .achive {
-    width: 600px;
-    float: left;
+
     padding: 0px 40px;
   }
 

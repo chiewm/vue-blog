@@ -2,14 +2,12 @@
   <div>
     <top-bar></top-bar>
     <div class="container">
-         <div style="float:right">
-        <side-bar></side-bar>
-      </div>
       <div class="index">
         <content-bar></content-bar>
         <contents></contents>
-   </div>
- 
+      </div>
+
+      <side-bar></side-bar>
 
     </div>
 
@@ -41,8 +39,27 @@
 
 
 <style scoped>
+  .index {
+    margin-top: 20px;
+    width: 580px;
+    margin-right: 20px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 1024px) {
     .index {
-          margin-top: 20px;    
-              box-shadow: 0 1px 2px 0 rgba(0,0,0,.05); 
-}
+      margin-top: 40px;
+      width: 100%;
+      margin-right: 0
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .index {
+      width: 100%;
+      margin-right: 0;
+      margin-top: 20px;
+    }
+  }
+
 </style>

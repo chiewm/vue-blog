@@ -2,9 +2,9 @@
   <div>
     <top-bar></top-bar>
     <div class="container">
-      <div style="float:right">
-        <side-bar></side-bar>
-      </div>
+
+
+
 
       <div class="post">
         <div class="title">{{ title }}</div>
@@ -17,6 +17,8 @@
           </div>
         </div>
       </div>
+
+      <side-bar></side-bar>
 
     </div>
 
@@ -75,11 +77,31 @@
     margin-top: 20px;
     padding: 20px;
     background: #fff;
-    width: 600px;
+    width: 540px;
     min-height: 420px;
     color: #71777c;
+    margin-right: 20px;
     padding-bottom: 30px;
   }
+
+  @media screen and (min-width: 320px) and (max-width: 1024px) {
+    .post {
+      margin-top: 40px;
+      width: 100%;
+      margin-right: 0
+    }
+  }
+
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .post {
+      width: 100%;
+      margin-right: 0;
+      margin-top: 20px;
+    }
+  }
+
+
 
   .post .title {
     padding: 20px;

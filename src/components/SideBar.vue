@@ -31,7 +31,17 @@ import Wechat from '@/components/widgets/Wechat';
 </script>
 
 <style scoped>
+.sidebar {
+  margin-top: 20px; 
+  width: 280px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
     .sidebar {
-        width: 300px;
+        width: 100%;
+
     }
+}
+
+
 </style>
